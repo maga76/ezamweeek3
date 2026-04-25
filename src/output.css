@@ -7,6 +7,7 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --spacing: 0.25rem;
     --font-weight-normal: 400;
     --font-weight-medium: 500;
     --font-weight-semibold: 600;
@@ -323,6 +324,9 @@
   .w-\[px\] {
     width: px;
   }
+  .max-w-300 {
+    max-width: calc(var(--spacing) * 300);
+  }
   .max-w-\[1200px\] {
     max-width: 1200px;
   }
@@ -350,6 +354,9 @@
   .gap-\[0px\] {
     gap: 0px;
   }
+  .gap-\[6px\] {
+    gap: 6px;
+  }
   .gap-\[16px\] {
     gap: 16px;
   }
@@ -359,8 +366,14 @@
   .gap-\[22px\] {
     gap: 22px;
   }
+  .gap-\[25px\] {
+    gap: 25px;
+  }
   .gap-\[30px\] {
     gap: 30px;
+  }
+  .gap-\[35px\] {
+    gap: 35px;
   }
   .gap-\[50px\] {
     gap: 50px;
@@ -380,6 +393,13 @@
   .border {
     border-style: var(--tw-border-style);
     border-width: 1px;
+  }
+  .border-t {
+    border-top-style: var(--tw-border-style);
+    border-top-width: 1px;
+  }
+  .border-\[\#858585\] {
+    border-color: #858585;
   }
   .bg-\[\#0A84FF\] {
     background-color: #0A84FF;
@@ -483,6 +503,9 @@
   }
   .text-\[\#0A84FF\] {
     color: #0A84FF;
+  }
+  .text-\[\#98989A\] {
+    color: #98989A;
   }
   .text-\[\#FFFFFFCC\] {
     color: #FFFFFFCC;
@@ -667,9 +690,19 @@
       flex-direction: row;
     }
   }
+  .lg\:items-center {
+    @media (width >= 64rem) {
+      align-items: center;
+    }
+  }
   .lg\:items-start {
     @media (width >= 64rem) {
       align-items: flex-start;
+    }
+  }
+  .lg\:gap-0 {
+    @media (width >= 64rem) {
+      gap: calc(var(--spacing) * 0);
     }
   }
   .lg\:p-\[0px\] {
