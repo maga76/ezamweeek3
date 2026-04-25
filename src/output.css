@@ -8,6 +8,7 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --font-weight-normal: 400;
+    --font-weight-medium: 500;
     --font-weight-semibold: 600;
     --font-weight-black: 900;
     --default-font-family: var(--font-sans);
@@ -187,8 +188,20 @@
   .mt-\[30px\] {
     margin-top: 30px;
   }
+  .mt-\[32px\] {
+    margin-top: 32px;
+  }
   .mt-\[47px\] {
     margin-top: 47px;
+  }
+  .mt-\[60px\] {
+    margin-top: 60px;
+  }
+  .mt-\[100px\] {
+    margin-top: 100px;
+  }
+  .ml-\[-20px\] {
+    margin-left: -20px;
   }
   .ml-\[-30px\] {
     margin-left: -30px;
@@ -223,17 +236,38 @@
   .table {
     display: table;
   }
+  .h-\[480px\] {
+    height: 480px;
+  }
   .w-\[5px80\] {
     width: 5px80;
   }
   .w-\[5px\] {
     width: 5px;
   }
+  .w-\[265\] {
+    width: 265;
+  }
+  .w-\[265px\] {
+    width: 265px;
+  }
+  .w-\[377\] {
+    width: 377;
+  }
+  .w-\[377px\] {
+    width: 377px;
+  }
+  .w-\[400px\] {
+    width: 400px;
+  }
   .w-\[547\] {
     width: 547;
   }
   .w-\[547px\] {
     width: 547px;
+  }
+  .w-\[579px\] {
+    width: 579px;
   }
   .w-\[580px\] {
     width: 580px;
@@ -286,6 +320,9 @@
   .gap-\[30px\] {
     gap: 30px;
   }
+  .gap-\[50px\] {
+    gap: 50px;
+  }
   .gap-\[100px\] {
     gap: 100px;
   }
@@ -294,6 +331,9 @@
   }
   .rounded-\[16px\] {
     border-radius: 16px;
+  }
+  .rounded-\[36px\] {
+    border-radius: 36px;
   }
   .border {
     border-style: var(--tw-border-style);
@@ -305,11 +345,26 @@
   .bg-\[\#030303\] {
     background-color: #030303;
   }
+  .bg-\[\#141414\] {
+    background-color: #141414;
+  }
   .p-\[14px_35px\] {
     padding: 14px 35px;
   }
   .p-\[28px\] {
     padding: 28px;
+  }
+  .p-\[42px\] {
+    padding: 42px;
+  }
+  .p-\[42px_77px\] {
+    padding: 42px 77px;
+  }
+  .p-\[42px_\] {
+    padding: 42px ;
+  }
+  .text-center {
+    text-align: center;
   }
   .text-\[14px\] {
     font-size: 14px;
@@ -320,8 +375,14 @@
   .text-\[20px\] {
     font-size: 20px;
   }
+  .text-\[24px\] {
+    font-size: 24px;
+  }
   .text-\[30px\] {
     font-size: 30px;
+  }
+  .text-\[36px\] {
+    font-size: 36px;
   }
   .text-\[37px\] {
     font-size: 37px;
@@ -332,6 +393,10 @@
   .font-black {
     --tw-font-weight: var(--font-weight-black);
     font-weight: var(--font-weight-black);
+  }
+  .font-medium {
+    --tw-font-weight: var(--font-weight-medium);
+    font-weight: var(--font-weight-medium);
   }
   .font-normal {
     --tw-font-weight: var(--font-weight-normal);
@@ -364,6 +429,41 @@
       margin-left: -270px;
     }
   }
+  .lg\:ml-\[50px\] {
+    @media (width >= 64rem) {
+      margin-left: 50px;
+    }
+  }
+  .lg\:ml-\[100px\] {
+    @media (width >= 64rem) {
+      margin-left: 100px;
+    }
+  }
+  .lg\:ml-\[310px\] {
+    @media (width >= 64rem) {
+      margin-left: 310px;
+    }
+  }
+  .lg\:ml-\[320px\] {
+    @media (width >= 64rem) {
+      margin-left: 320px;
+    }
+  }
+  .lg\:ml-\[330px\] {
+    @media (width >= 64rem) {
+      margin-left: 330px;
+    }
+  }
+  .lg\:ml-\[350px\] {
+    @media (width >= 64rem) {
+      margin-left: 350px;
+    }
+  }
+  .lg\:ml-\[400px\] {
+    @media (width >= 64rem) {
+      margin-left: 400px;
+    }
+  }
   .lg\:block {
     @media (width >= 64rem) {
       display: block;
@@ -384,6 +484,11 @@
       width: 547px;
     }
   }
+  .lg\:w-\[579px\] {
+    @media (width >= 64rem) {
+      width: 579px;
+    }
+  }
   .lg\:w-\[712px\] {
     @media (width >= 64rem) {
       width: 712px;
@@ -399,6 +504,11 @@
       font-size: 20px;
     }
   }
+  .lg\:text-\[36px\] {
+    @media (width >= 64rem) {
+      font-size: 36px;
+    }
+  }
   .lg\:text-\[72px\] {
     @media (width >= 64rem) {
       font-size: 72px;
@@ -408,6 +518,12 @@
     @media (width >= 64rem) {
       --tw-font-weight: var(--font-weight-black);
       font-weight: var(--font-weight-black);
+    }
+  }
+  .lg\:font-semibold {
+    @media (width >= 64rem) {
+      --tw-font-weight: var(--font-weight-semibold);
+      font-weight: var(--font-weight-semibold);
     }
   }
 }
