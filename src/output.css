@@ -186,6 +186,9 @@
   .mt-\[32px\] {
     margin-top: 32px;
   }
+  .mt-\[40px\] {
+    margin-top: 40px;
+  }
   .mt-\[60px\] {
     margin-top: 60px;
   }
@@ -198,12 +201,9 @@
   .ml-\[-20px\] {
     margin-left: -20px;
   }
-<<<<<<< HEAD
   .ml-\[-100px\] {
     margin-left: -100px;
   }
-=======
->>>>>>> 6334161af9714de1e03116a775d83116ee3a45e7
   .block {
     display: block;
   }
@@ -213,12 +213,15 @@
   .hidden {
     display: none;
   }
-<<<<<<< HEAD
   .table {
     display: table;
   }
-=======
->>>>>>> 6334161af9714de1e03116a775d83116ee3a45e7
+  .h-\[376\] {
+    height: 376;
+  }
+  .h-\[376px\] {
+    height: 376px;
+  }
   .h-\[480px\] {
     height: 480px;
   }
@@ -234,21 +237,24 @@
   .w-\[400px\] {
     width: 400px;
   }
+  .w-\[629px\] {
+    width: 629px;
+  }
+  .w-\[1254px\] {
+    width: 1254px;
+  }
   .max-w-300 {
     max-width: calc(var(--spacing) * 300);
   }
   .max-w-\[1200px\] {
     max-width: 1200px;
   }
-<<<<<<< HEAD
   .border-collapse {
     border-collapse: collapse;
   }
   .resize {
     resize: both;
   }
-=======
->>>>>>> 6334161af9714de1e03116a775d83116ee3a45e7
   .flex-col {
     flex-direction: column;
   }
@@ -291,6 +297,13 @@
   .rounded-\[36px\] {
     border-radius: 36px;
   }
+  .rounded-\[48px\] {
+    border-radius: 48px;
+  }
+  .border {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
+  }
   .border-t {
     border-top-style: var(--tw-border-style);
     border-top-width: 1px;
@@ -328,6 +341,21 @@
   .p-\[42px_77px\] {
     padding: 42px 77px;
   }
+  .p-\[57px\] {
+    padding: 57px;
+  }
+  .p-\[57px_57px\] {
+    padding: 57px 57px;
+  }
+  .p-\[57px_66px\] {
+    padding: 57px 66px;
+  }
+  .p-\[57px_\] {
+    padding: 57px ;
+  }
+  .p-\[57px_px\] {
+    padding: 57px px;
+  }
   .pt-\[30px\] {
     padding-top: 30px;
   }
@@ -361,13 +389,10 @@
   .text-\[37px\] {
     font-size: 37px;
   }
-<<<<<<< HEAD
   .font-black {
     --tw-font-weight: var(--font-weight-black);
     font-weight: var(--font-weight-black);
   }
-=======
->>>>>>> 6334161af9714de1e03116a775d83116ee3a45e7
   .font-medium {
     --tw-font-weight: var(--font-weight-medium);
     font-weight: var(--font-weight-medium);
@@ -389,10 +414,12 @@
   .text-\[\#FFFFFFCC\] {
     color: #FFFFFFCC;
   }
+  .text-\[\#FFFFFFE5\] {
+    color: #FFFFFFE5;
+  }
   .text-\[white\] {
     color: white;
   }
-<<<<<<< HEAD
   .underline {
     text-decoration-line: underline;
   }
@@ -400,8 +427,6 @@
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
   }
-=======
->>>>>>> 6334161af9714de1e03116a775d83116ee3a45e7
   .lg\:mt-\[-30px\] {
     @media (width >= 64rem) {
       margin-top: -30px;
@@ -422,14 +447,11 @@
       margin-top: 0px;
     }
   }
-<<<<<<< HEAD
   .lg\:ml-\[-270px\] {
     @media (width >= 64rem) {
       margin-left: -270px;
     }
   }
-=======
->>>>>>> 6334161af9714de1e03116a775d83116ee3a45e7
   .lg\:ml-\[190px\] {
     @media (width >= 64rem) {
       margin-left: 190px;
@@ -530,6 +552,11 @@
       font-size: 36px;
     }
   }
+  .lg\:text-\[40px\] {
+    @media (width >= 64rem) {
+      font-size: 40px;
+    }
+  }
   .lg\:text-\[72px\] {
     @media (width >= 64rem) {
       font-size: 72px;
@@ -557,11 +584,17 @@
   syntax: "*";
   inherits: false;
 }
+@property --tw-outline-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
       --tw-border-style: solid;
       --tw-font-weight: initial;
+      --tw-outline-style: solid;
     }
   }
 }
