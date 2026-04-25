@@ -1,37 +1,246 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./output.css">
-</head>
-<body class="bg-[#030303] text-[white]">
+    <link rel="stylesheet" href="./output.css" />
+  </head>
+  <body class="bg-[#030303] text-[white]">
     <header class="max-w-[1200px] m-auto">
-        <div class="flex justify-between items-center p-[28px]">
-            <img src="./image/Logo.png" alt="">
-            <div class="text-[16px] font-normal flex gap-[22px] hidden lg:flex">
-                <a href="../index.html">Home</a>
-                <a href="#">Services</a>
-                <a href="./src/pages/page3.html">Careers</a>
-                <a href="./src/pages/page4.html">Career Details</a>
-                <a href="./src/pages/page5.html">Contact</a>
-            </div>
-            <button class="p-[14px_35px] bg-[#0A84FF] text-[14px] font-semibold rounded-[10px] lg:block hidden ">Contact</button>
-            <p class="lg:hidden block text-[30px]">☰</p>
+      <div class="flex justify-between items-center p-[28px]">
+        <img src="./image/Logo.png" alt="" />
+        <div class="text-[16px] font-normal flex gap-[22px] hidden lg:flex">
+          <a href="../index.html">Home</a>
+          <a href="#">Services</a>
+          <a href="./src/pages/page3.html">Careers</a>
+          <a href="./src/pages/page4.html">Career Details</a>
+          <a href="./src/pages/page5.html">Contact</a>
         </div>
+        <button
+          class="p-[14px_35px] bg-[#0A84FF] text-[14px] font-semibold rounded-[10px] lg:block hidden"
+        >
+          Contact
+        </button>
+        <p class="lg:hidden block text-[30px]">☰</p>
+      </div>
     </header>
     <main>
-        <section class="max-w-[1200px] m-auto">
-            <div class="flex bg-[#141414] w-[1254px] h-[376px] rounded-[48px] mt-[40px] lg:flex hidden">
-                <aside class="p-[57px_57px]">
-                    <p class="lg:text-[40px] font-semibold ">Our Comprehensive <span class="text-[#0A84FF] font-black"> Digital Solutions</span></p>
-                    <p class="text-[16px] font-normal w-[629px]">At Catalyst Analytics, we offer a comprehensive suite of digital solutions designed to propel your business to new heights in the digital realm. With a team of skilled professionals, cutting-edge technologies, and a passion for innovation, we are committed to delivering exceptional results for every project we undertake. From captivating web design that leaves a lasting impression to seamless web development that ensures optimal functionality, we cover every aspect of your online presence.</p>
-                </aside>
-                <img src="./image/Screenshot_85.png" alt="">
-            </div>
-            <!-- // -->
-        </section>
+      <section
+        class="flex flex-col lg:flex-row justify-between max-w-300 m-auto bg-[#141414] rounded-[20px] lg:mt-[75px]"
+      >
+        <aside
+          class="flex items-start flex-col self-center p-[25px] gap-[40px]"
+        >
+          <h1 class="text-[36px] font-semibold">
+            Our Comprehensive
+            <span class="text-[#0A84FF] font-black">Digital Solutions</span>
+          </h1>
+          <p class="text-[16px]">
+            At Catalyst Analytics, we offer a comprehensive suite of digital
+            solutions designed to propel your business to new heights in the
+            digital realm. With a team of skilled professionals, cutting-edge
+            technologies, and a passion for innovation, we are committed to
+            delivering exceptional results for every project we undertake. From
+            captivating web design that leaves a lasting impression to seamless
+            web development that ensures optimal functionality, we cover every
+            aspect of your online presence.
+          </p>
+        </aside>
+        <img src="./image/Screenshot_85.png" class="hidden lg:inline" alt="" />
+      </section>
+      <section
+        class="flex flex-col items-center max-w-300 m-auto gap-[50px] p-[50px_20px]"
+      >
+        <nav class="flex flex-col gap-[8px] text-center">
+          <h1 class="text-[36px] font-semibold">Our Services</h1>
+          <p class="text-[16px] lg:w-[650px]">
+            Comprehensive AI, blockchain, and analytics solutions powered by
+            deep expertise in machine learning and data engineering
+          </p>
+        </nav>
+        <div class="flex flex-col lg:flex-row gap-[25px]">
+          <div
+            class="flex flex-col items-center gap-[25px] bg-[#141414] p-[25px] rounded-[25px]"
+          >
+            <img src="./image/mozg.png" alt="" />
+            <h1 class="text-[24px] font-semibold text-center">
+              Machine Learning Solutions
+            </h1>
+            <p class="lg:w-[485px] text-center">
+              Custom ML models designed and optimized for your specific business
+              challenges, leveraging cutting-edge deep learning techniques.
+            </p>
+            <nav class="flex items-start flex-col lg:flex-row gap-[25px]">
+              <ul class="list-disc marker:text-[#0A84FF]">
+                <li class="text-[14px]">Deep learning model development</li>
+                <li class="text-[14px]">Computer vision solutions</li>
+                <li class="text-[14px]">Model optimization and scaling</li>
+              </ul>
+              <ul class="list-disc marker:text-[#0A84FF]">
+                <li class="text-[14px]">Neural network architecture design</li>
+                <li class="text-[14px]">Natural language processing</li>
+              </ul>
+            </nav>
+            <button
+              class="flex items-center gap-[10px] border p-[10px_15px] rounded-[50px] border-[#0A84FF]"
+            >
+              <img src="./image/right.png" alt="" />
+              Book a Call
+            </button>
+          </div>
+          <div
+            class="flex flex-col items-center gap-[25px] bg-[#141414] p-[25px] rounded-[25px]"
+          >
+            <img src="./image/mozg2.png" alt="" />
+            <h1 class="text-[24px] font-semibold text-center">
+              Machine Learning Solutions
+            </h1>
+            <p class="lg:w-[485px] text-center">
+              Custom ML models designed and optimized for your specific business
+              challenges, leveraging cutting-edge deep learning techniques.
+            </p>
+            <nav class="flex items-start flex-col lg:flex-row gap-[25px]">
+              <ul class="list-disc marker:text-[#0A84FF]">
+                <li class="text-[14px]">Deep learning model development</li>
+                <li class="text-[14px]">Computer vision solutions</li>
+                <li class="text-[14px]">Model optimization and scaling</li>
+              </ul>
+              <ul class="list-disc marker:text-[#0A84FF]">
+                <li class="text-[14px]">Neural network architecture design</li>
+                <li class="text-[14px]">Natural language processing</li>
+              </ul>
+            </nav>
+            <button
+              class="flex items-center gap-[10px] border p-[10px_15px] rounded-[50px] border-[#0A84FF]"
+            >
+              <img src="./image/right.png" alt="" />
+              Book a Call
+            </button>
+          </div>
+          
+        </div>
+        <div class="flex flex-col lg:flex-row gap-[25px]">
+          <div
+            class="flex flex-col items-center gap-[25px] bg-[#141414] p-[25px] rounded-[25px]"
+          >
+            <img src="./image/mozg3.png" alt="" />
+            <h1 class="text-[24px] font-semibold text-center">
+              Machine Learning Solutions
+            </h1>
+            <p class="lg:w-[485px] text-center">
+              Custom ML models designed and optimized for your specific business
+              challenges, leveraging cutting-edge deep learning techniques.
+            </p>
+            <nav class="flex items-start flex-col lg:flex-row gap-[25px]">
+              <ul class="list-disc marker:text-[#0A84FF]">
+                <li class="text-[14px]">Deep learning model development</li>
+                <li class="text-[14px]">Computer vision solutions</li>
+                <li class="text-[14px]">Model optimization and scaling</li>
+              </ul>
+              <ul class="list-disc marker:text-[#0A84FF]">
+                <li class="text-[14px]">Neural network architecture design</li>
+                <li class="text-[14px]">Natural language processing</li>
+              </ul>
+            </nav>
+            <button
+              class="flex items-center gap-[10px] border p-[10px_15px] rounded-[50px] border-[#0A84FF]"
+            >
+              <img src="./image/right.png" alt="" />
+              Book a Call
+            </button>
+          </div>
+          <div
+            class="flex flex-col items-center gap-[25px] bg-[#141414] p-[25px] rounded-[25px]"
+          >
+            <img src="./image/mozg4.png" alt="" />
+            <h1 class="text-[24px] font-semibold text-center">
+              Machine Learning Solutions
+            </h1>
+            <p class="lg:w-[485px] text-center">
+              Custom ML models designed and optimized for your specific business
+              challenges, leveraging cutting-edge deep learning techniques.
+            </p>
+            <nav class="flex items-start flex-col lg:flex-row gap-[25px]">
+              <ul class="list-disc marker:text-[#0A84FF]">
+                <li class="text-[14px]">Deep learning model development</li>
+                <li class="text-[14px]">Computer vision solutions</li>
+                <li class="text-[14px]">Model optimization and scaling</li>
+              </ul>
+              <ul class="list-disc marker:text-[#0A84FF]">
+                <li class="text-[14px]">Neural network architecture design</li>
+                <li class="text-[14px]">Natural language processing</li>
+              </ul>
+            </nav>
+            <button
+              class="flex items-center gap-[10px] border p-[10px_15px] rounded-[50px] border-[#0A84FF]"
+            >
+              <img src="./image/right.png" alt="" />
+              Book a Call
+            </button>
+          </div>
+        </div>
+        <div class="flex flex-col lg:flex-row gap-[25px]">
+          <div
+            class="flex flex-col items-center gap-[25px] bg-[#141414] p-[25px] rounded-[25px]"
+          >
+            <img src="./image/mozg5.png" alt="" />
+            <h1 class="text-[24px] font-semibold text-center">
+              Machine Learning Solutions
+            </h1>
+            <p class="lg:w-[485px] text-center">
+              Custom ML models designed and optimized for your specific business
+              challenges, leveraging cutting-edge deep learning techniques.
+            </p>
+            <nav class="flex items-start flex-col lg:flex-row gap-[25px]">
+              <ul class="list-disc marker:text-[#0A84FF]">
+                <li class="text-[14px]">Deep learning model development</li>
+                <li class="text-[14px]">Computer vision solutions</li>
+                <li class="text-[14px]">Model optimization and scaling</li>
+              </ul>
+              <ul class="list-disc marker:text-[#0A84FF]">
+                <li class="text-[14px]">Neural network architecture design</li>
+                <li class="text-[14px]">Natural language processing</li>
+              </ul>
+            </nav>
+            <button
+              class="flex items-center gap-[10px] border p-[10px_15px] rounded-[50px] border-[#0A84FF]"
+            >
+              <img src="./image/right.png" alt="" />
+              Book a Call
+            </button>
+          </div>
+          <div
+            class="flex flex-col items-center gap-[25px] bg-[#141414] p-[25px] rounded-[25px]"
+          >
+            <img src="./image/mozg6.png" alt="" />
+            <h1 class="text-[24px] font-semibold text-center">
+              Machine Learning Solutions
+            </h1>
+            <p class="lg:w-[485px] text-center">
+              Custom ML models designed and optimized for your specific business
+              challenges, leveraging cutting-edge deep learning techniques.
+            </p>
+            <nav class="flex items-start flex-col lg:flex-row gap-[25px]">
+              <ul class="list-disc marker:text-[#0A84FF]">
+                <li class="text-[14px]">Deep learning model development</li>
+                <li class="text-[14px]">Computer vision solutions</li>
+                <li class="text-[14px]">Model optimization and scaling</li>
+              </ul>
+              <ul class="list-disc marker:text-[#0A84FF]">
+                <li class="text-[14px]">Neural network architecture design</li>
+                <li class="text-[14px]">Natural language processing</li>
+              </ul>
+            </nav>
+            <button
+              class="flex items-center gap-[10px] border p-[10px_15px] rounded-[50px] border-[#0A84FF]"
+            >
+              <img src="./image/right.png" alt="" />
+              Book a Call
+            </button>
+          </div>
+        </div>
+      </section>
     </main>
-</body>
+  </body>
 </html>
