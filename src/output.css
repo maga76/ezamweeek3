@@ -505,6 +505,9 @@
   .pl-\[10px\] {
     padding-left: 10px;
   }
+  .pl-\[30px\] {
+    padding-left: 30px;
+  }
   .text-center {
     text-align: center;
   }
@@ -578,6 +581,9 @@
   }
   .text-\[\#B3B3B2\] {
     color: #B3B3B2;
+  }
+  .text-\[\#D0D0D0\] {
+    color: #D0D0D0;
   }
   .text-\[\#E6E6E6\] {
     color: #E6E6E6;
@@ -742,6 +748,11 @@
       width: 485px;
     }
   }
+  .lg\:w-\[500px\] {
+    @media (width >= 64rem) {
+      width: 500px;
+    }
+  }
   .lg\:w-\[547px\] {
     @media (width >= 64rem) {
       width: 547px;
@@ -755,6 +766,11 @@
   .lg\:w-\[588px\] {
     @media (width >= 64rem) {
       width: 588px;
+    }
+  }
+  .lg\:w-\[600px\] {
+    @media (width >= 64rem) {
+      width: 600px;
     }
   }
   .lg\:w-\[650px\] {
