@@ -301,6 +301,15 @@
   .justify-center {
     justify-content: center;
   }
+  .gap-\[-10px\] {
+    gap: -10px;
+  }
+  .gap-\[-100px\] {
+    gap: -100px;
+  }
+  .gap-\[0px\] {
+    gap: 0px;
+  }
   .gap-\[5px\] {
     gap: 5px;
   }
@@ -336,6 +345,9 @@
   }
   .gap-\[50px\] {
     gap: 50px;
+  }
+  .gap-\[100px\] {
+    gap: 100px;
   }
   .self-center {
     align-self: center;
